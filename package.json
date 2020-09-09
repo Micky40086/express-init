@@ -2,10 +2,17 @@
   "name": "mail-service",
   "version": "0.0.0",
   "private": true,
-  "nodemonConfig": { 
+  "nodemonConfig": {
     "exec": "npm run dev",
-    "watch": ["src/*", "public/*"],
-    "ignore": ["**/__tests__/**", "*.test.js", "*.spec.js"]
+    "watch": [
+      "src/*",
+      "public/*"
+    ],
+    "ignore": [
+      "**/__tests__/**",
+      "*.test.js",
+      "*.spec.js"
+    ]
   },
   "scripts": {
     "watch:dev": "nodemon",
@@ -33,5 +40,8 @@
     "morgan": "~1.9.1",
     "nodemon": "^2.0.4",
     "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "prettier": "2.1.1"
   }
 }

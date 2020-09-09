@@ -1,9 +1,10 @@
-import express from 'express';
-const router = express.Router();
+import express from 'express'
 
-router.get('/', function(req, res, next) {
-  res.setHeader('Content-Type', 'application/json');
-  res.end(JSON.stringify({ name: "Mickey" }));
-});
+const router = express.Router()
 
-export default router;
+router.get('/', function (req, res, next) {
+  res.setHeader('Content-Type', 'application/json')
+  res.end(JSON.stringify({ name: 'Mickey' }))
+})
+
+export default router
